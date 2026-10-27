@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baytarım — Məxfilik Siyasəti</title>
+  <meta name="description" content="Baytarım mobil tətbiqinin məxfilik siyasəti" />
+  <style>
+    :root { --bg:#f7faf7; --card:#fff; --text:#1a2e1a; --muted:#4d6350; --accent:#2e7d32; --line:#d7e6d8; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--text); line-height:1.65; }
+    header { background:linear-gradient(135deg,#1b5e20,#43a047); color:#fff; padding:2.2rem 1.25rem 1.8rem; }
+    header .wrap, main { max-width:760px; margin:0 auto; }
+    h1 { margin:0 0 .35rem; font-size:1.75rem; }
+    .sub { opacity:.92; font-size:.95rem; }
+    main { padding:1.5rem 1.25rem 3rem; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1.25rem 1.35rem; margin-bottom:1rem; box-shadow:0 1px 2px rgba(0,0,0,.04); }
+    h2 { margin:0 0 .6rem; font-size:1.15rem; color:var(--accent); }
+    p, li { color:var(--muted); }
+    ul { padding-left:1.2rem; margin:.4rem 0 .2rem; }
+    a { color:var(--accent); }
+    footer { text-align:center; color:var(--muted); font-size:.85rem; padding:0 1rem 2.5rem; }
+    .lang { margin-top:.8rem; display:flex; gap:.5rem; flex-wrap:wrap; }
+    .lang a { color:#fff; background:rgba(255,255,255,.18); text-decoration:none; padding:.25rem .65rem; border-radius:999px; font-size:.85rem; }
+    .lang a.active { background:#fff; color:#1b5e20; font-weight:600; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Baytarım — Məxfilik Siyasəti</h1>
+      <div class="sub">Son yenilənmə: 27 oktyabr 2026 · Tətbiq: Baytarım (com.rainnovation.baytarim)</div>
+      <div class="lang">
+        <a class="active" href="/">AZ</a>
+        <a href="/en.html">EN</a>
+        <a href="/ru.html">RU</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="card">
+      <h2>1. Kimik</h2>
+      <p>Baytarım Bakı və ətrafında baytar klinikalarını tapmaq, heyvan profili saxlamaq, rezervasiya və təcili (SOS) yardım üçün nəzərdə tutulmuş mobil tətbiqdir. Operator: RA Innovations / Rufat Alakbarli. Əlaqə: <a href="mailto:alekberovrufa@gmail.com">alekberovrufa@gmail.com</a>.</p>
+    </div>
+    <div class="card">
+      <h2>2. Hansı məlumatları toplayırıq</h2>
+      <ul>
+        <li><strong>Hesab:</strong> e-poçt/parol, Google hesabı ilə giriş və ya telefon (SMS) təsdiqi; ad və profil şəkli.</li>
+        <li><strong>Heyvan məlumatları:</strong> ad, növ, cins, yaş və sizin yüklədiyiniz foto.</li>
+        <li><strong>Məkan:</strong> yaxın klinikaları göstərmək üçün cihazın təxmini/dəqiq yeri (icazə verdikdə).</li>
+        <li><strong>Rezervasiyalar və rəylər:</strong> klinikaya yazıldığınız vaxtlar, ziyarət tarixçəsi və rəylər.</li>
+        <li><strong>Cihaz və bildirişlər:</strong> push bildiriş tokeni, tətbiq istifadəsi üçün əsas texniki loglar.</li>
+        <li><strong>Favorilər və tənzimləmələr:</strong> seçdiyiniz klinikalar, SOS düyməsi/widget tənzimləmələri.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>3. Necə istifadə edirik</h2>
+      <ul>
+        <li>Xəritədə klinikaları göstərmək və naviqasiya linkləri vermək</li>
+        <li>Hesab, heyvan profili və rezervasiyaları idarə etmək</li>
+        <li>Bildirişlər (məs. rezervasiya yeniləmələri) göndərmək</li>
+        <li>Təcili yardım (SOS) və home-screen widget funksiyası</li>
+        <li>Təhlükəsizlik, sui-istifadənin qarşısı və xidmətin işləməsi</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>4. Üçüncü tərəf xidmətlər</h2>
+      <ul>
+        <li><strong>Firebase</strong> (Google): autentifikasiya, Firestore, Storage, Cloud Messaging, Analytics</li>
+        <li><strong>Google Sign-In</strong> və <strong>Google Maps</strong> / Geolocation</li>
+        <li><strong>Backend infrastruktur:</strong> API hostingu, MongoDB, Redis (keş), Socket.IO (canlı rezervasiya)</li>
+        <li>Telefon zəngi/e-poçt/naviqasiya cihazın sistem intent-ləri ilə açılır</li>
+      </ul>
+      <p>Bu xidmətlərin öz məxfilik siyasətləri də tətbiq olunur.</p>
+    </div>
+    <div class="card">
+      <h2>5. Android icazələri</h2>
+      <ul>
+        <li><strong>İnternet</strong> — tətbiqin server və xəritə ilə işləməsi</li>
+        <li><strong>Dəqiq / təxmini məkan</strong> — yaxın klinikalar və xəritə</li>
+        <li><strong>Bildirişlər</strong> — push bildirişlər</li>
+        <li><strong>Foto/kamera (lazım olduqda)</strong> — heyvan şəkli əlavə etmək (qalereya və ya kamera)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>6. Saxlanma və təhlükəsizlik</h2>
+      <p>Məlumatlar xidmətin göstərilməsi üçün lazım olduğu müddət saxlanılır. Hesabı silmək funksiyası tətbiqdə mövcuddur; silmə sorğusu üçün eyni e-poçta da yaza bilərsiniz. Giriş tokenləri və əlaqə kanalları sənaye standartlarına uyğun qorunur; mütləq təhlükəsizlik vəd edilmir.</p>
+    </div>
+    <div class="card">
+      <h2>7. Uşaqlar</h2>
+      <p>Baytarım 16 yaşdan kiçik uşaqlara yönəlməyib. Belə hesab aşkarlanarsa, silinməsi üçün bizimlə əlaqə saxlayın.</p>
+    </div>
+    <div class="card">
+      <h2>8. Hüquqlarınız</h2>
+      <p>Məlumatlarınıza baxmaq, düzəliş və silmə tələb etmək hüququnuz var. Tətbiqdən çıxış və hesab silmə, həmçinin <a href="mailto:alekberovrufa@gmail.com">alekberovrufa@gmail.com</a> vasitəsilə müraciət mümkündür.</p>
+    </div>
+    <div class="card">
+      <h2>9. Dəyişikliklər</h2>
+      <p>Bu siyasət yenilənə bilər. Əhəmiyyətli dəyişikliklərdə tarix yenilənir və mümkün olduqda tətbiqdə bildiriş verilir.</p>
+    </div>
+  </main>
+  <footer>© 2026 Baytarım · RA Innovations</footer>
+</body>
+</html>
